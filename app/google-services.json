@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "163362605069",
+    "firebase_url": "https://malangvacation.firebaseio.com",
+    "project_id": "malangvacation",
+    "storage_bucket": "malangvacation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163362605069:android:e49374ddc783f330",
+        "android_client_info": {
+          "package_name": "com.example.vacationmalangver1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163362605069-gmif5rrt8n8r69kv59o2if8jjclglqrr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vacationmalangver1",
+            "certificate_hash": "7a28620c152b3981492b139c0107ff1bad9c6ca9"
+          }
+        },
+        {
+          "client_id": "163362605069-pkqhvba4b3h9sbeiec3534l9ivme5hr1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vacationmalangver1",
+            "certificate_hash": "71ea5280b92c513e5d13494ba3c60f44130a3ede"
+          }
+        },
+        {
+          "client_id": "163362605069-pidne2q796ne9atdqo0akh2b9l3c3old.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCxRSd4hIkU9g3mk8qMl3SeZu5sKmtWSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163362605069-pidne2q796ne9atdqo0akh2b9l3c3old.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
