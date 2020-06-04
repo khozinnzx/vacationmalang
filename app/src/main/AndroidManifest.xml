@@ -6,14 +6,6 @@
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality.
     -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-feature
-        android:glEsVersion="0x00020000"
-        android:required="true" />
-
     <application
         android:name=".util.UserClient"
         android:allowBackup="false"
@@ -22,10 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
+        <activity android:name=".Ui.CheckListActivity" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Ui.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -34,11 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".MainActivity">
-        </activity>
-        <activity android:name=".WisataDetailActivity" />
-
+        <activity android:name=".Ui.RegisterActivity" />
+        <activity android:name=".Ui.MainActivity" />
+        <activity android:name=".Ui.WisataDetailActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -47,11 +36,21 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <service
+            android:name=".Services.LocationService"
+            android:stopWithTask="true" />
+
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
-        <service android:name=".Services.LocationService"
-            android:stopWithTask="true"/>
     </application>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

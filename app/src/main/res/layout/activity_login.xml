@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/black_gradient"
-    tools:context="com.example.vacationmalangver1.LoginActivity">
+    tools:context="com.example.vacationmalangver1.Ui.LoginActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/login_activity_toolbar"
@@ -64,7 +64,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="104dp"
-        android:background="@drawable/button_style"
+        android:background="@drawable/btn_detail_style"
         android:text="Login"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"

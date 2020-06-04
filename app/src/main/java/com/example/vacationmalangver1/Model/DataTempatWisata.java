@@ -5,16 +5,20 @@ public class DataTempatWisata {
     int background;
     String namaTempat;
     String alamatTempat;
+    String hargaTiket;
+    String deskripsi;
 
 
     public DataTempatWisata(){
 
     }
 
-    public DataTempatWisata(int background, String namaTempat, String alamatTempat) {
+    public DataTempatWisata(int background, String namaTempat, String alamatTempat, String deskripsi, String hargaTiket) {
         this.background = background;
         this.namaTempat = namaTempat;
         this.alamatTempat = alamatTempat;
+        this.deskripsi = deskripsi;
+        this.hargaTiket = hargaTiket;
     }
 
     public int getBackground() {
@@ -39,5 +43,21 @@ public class DataTempatWisata {
 
     public void setAlamatTempat(String alamatTempat) {
         this.alamatTempat = alamatTempat;
+    }
+
+    public String getHargaTiket() {
+        return hargaTiket;
+    }
+
+    public void setHargaTiket(String hargaTiket) {
+        this.hargaTiket = hargaTiket;
+    }
+
+    public String getDeskripsi() {
+        return deskripsi;
+    }
+
+    public void setDeskripsi(String deskripsi) {
+        this.deskripsi = deskripsi;
     }
 }

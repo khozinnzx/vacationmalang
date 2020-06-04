@@ -9,10 +9,12 @@ public class LokasiWisata implements Parcelable {
 
     public String nama_wisata;
     public GeoPoint geo_point_wisata;
+    public int id_wisata;
 
-    public LokasiWisata(GeoPoint geo_point_wisata, String nama_wisata) {
+    public LokasiWisata(GeoPoint geo_point_wisata, String nama_wisata, int id_wisata) {
         this.nama_wisata = nama_wisata;
         this.geo_point_wisata = geo_point_wisata;
+        this.id_wisata = id_wisata;
     }
 
     public LokasiWisata() {
@@ -50,6 +52,15 @@ public class LokasiWisata implements Parcelable {
     public void setGeo_point_wisata(GeoPoint geo_point_wisata) {
         this.geo_point_wisata = geo_point_wisata;
     }
+
+    public int getId_wisata() {
+        return id_wisata;
+    }
+
+    public void setId_wisata(int id_wisata) {
+        this.id_wisata = id_wisata;
+    }
+
 
     @Override
     public String toString() {
